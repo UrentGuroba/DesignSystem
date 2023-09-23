@@ -5,6 +5,7 @@
 //  Created by Senior Developer on 22.09.2023.
 //
 import FontService
+import ColorsService
 import UIKit
 
 public extension String {
@@ -260,9 +261,9 @@ public extension NSMutableAttributedString {
 		addingAttributes(.font(font))
 	}
 	
-	func addColor(_ color: UIColor, for string: String) -> Self {
+	func addColor(_ colorToken: ColorToken, for string: String) -> Self {
 		let range = stringRange(with: string)
-		let attribute = addingAttributes(.foregroundColor(color), range: range)
+		let attribute = addingAttributes(.foregroundColor(.set), range: range)
 		return attribute
 	}
 	
@@ -295,5 +296,13 @@ public extension NSMutableAttributedString {
 	
 	func baselineOffset(_ offset: CGFloat) -> Self {
 		addingAttributes([.baselineOffset: offset])
+	}
+}
+
+public extension UIColor {
+	static func set(with tokenName: ColorToken) -> UIColor {
+		let colorService = ColorService()
+		let appTarget = App.current.appTarget
+		return colorService.color(with: tokenName, with: appTarget)
 	}
 }
