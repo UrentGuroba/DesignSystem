@@ -15,105 +15,105 @@ public extension String {
 		return attributedString
 	}
 	
-	func title_0(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .title_0))
-		return attributedString
-	}
+//	func title_0(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .title_0))
+//		return attributedString
+//	}
+//
+//	func title_1(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .title_1))
+//		return attributedString
+//	}
+//
+//	func title_2(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .title_2))
+//		return attributedString
+//	}
+//
+//	func title_3(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .title_3))
+//		return attributedString
+//	}
+//
+//	func title_4(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .title_4))
+//		return attributedString
+//	}
+//
+//	func subtitle_1(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .subtitle_1))
+//		return attributedString
+//	}
+//
+//	func subtitle_2(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .subtitle_2))
+//		return attributedString
+//	}
 	
-	func title_1(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .title_1))
-		return attributedString
-	}
 	
-	func title_2(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .title_2))
-		return attributedString
-	}
-	
-	func title_3(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .title_3))
-		return attributedString
-	}
-	
-	func title_4(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .title_4))
-		return attributedString
-	}
-	
-	func subtitle_1(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .subtitle_1))
-		return attributedString
-	}
-	
-	func subtitle_2(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .subtitle_2))
-		return attributedString
-	}
-	
-	
-	func body_1(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .body_1))
-		return attributedString
-	}
-	
-	func body_2(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .body_2))
-		return attributedString
-	}
-	
-	func label(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .label))
-		return attributedString
-	}
-	
-	func caption(color: UIColor) -> NSMutableAttributedString {
-		let fontService = FontService()
-		let attributedString = self
-			.attributed
-			.foregroundColor(color)
-			.font(fontService.font(with: .caption))
-		return attributedString
-	}
+//	func body_1(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .body_1))
+//		return attributedString
+//	}
+//	
+//	func body_2(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .body_2))
+//		return attributedString
+//	}
+//	
+//	func label(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .label))
+//		return attributedString
+//	}
+//	
+//	func caption(color: UIColor) -> NSMutableAttributedString {
+//		let fontService = FontService()
+//		let attributedString = self
+//			.attributed
+//			.foregroundColor(color)
+//			.font(fontService.font(with: .caption))
+//		return attributedString
+//	}
 	
 	//
 	func title_0() -> NSMutableAttributedString {
@@ -253,8 +253,10 @@ public extension NSMutableAttributedString {
 		addingAttributes(attributes, range: fullRange())
 	}
 	
-	func foregroundColor(_ color: UIColor) -> Self {
-		addingAttributes(.foregroundColor(color))
+	func foregroundColor(_ colorToken: ColorToken) -> Self {
+		let colorService = ColorService()
+		let color = colorService.color(with: colorToken, with: .jet) ?? .black
+		return addingAttributes(.foregroundColor(color))
 	}
 	
 	func font(_ font: UIFont) -> Self {
