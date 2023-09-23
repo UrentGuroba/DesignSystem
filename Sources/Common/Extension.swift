@@ -7,7 +7,7 @@
 import FontService
 import UIKit
 
-extension String {
+public extension String {
 	
 	var attributed: NSMutableAttributedString {
 		let attributedString = NSMutableAttributedString(string: self)
@@ -113,9 +113,87 @@ extension String {
 			.font(fontService.font(with: .caption))
 		return attributedString
 	}
+	
+	//
+	func title_0() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .title_0))
+		return attributedString
+	}
+
+	func title_1() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .title_1))
+		return attributedString
+	}
+
+	func title_2() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .title_2))
+		return attributedString
+	}
+
+	func title_3() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .title_3))
+		return attributedString
+	}
+
+	func title_4() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .title_4))
+		return attributedString
+	}
+
+	func subtitle_1() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .subtitle_1))
+		return attributedString
+	}
+
+	func subtitle_2() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .subtitle_2))
+		return attributedString
+	}
+
+	func body_1() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .body_1))
+		return attributedString
+	}
+
+	func body_2() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .body_2))
+		return attributedString
+	}
+
+	func label() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .label))
+		return attributedString
+	}
+
+	func caption() -> NSMutableAttributedString {
+		let fontService = FontService()
+		let attributedString = attributed
+			.font(fontService.font(with: .caption))
+		return attributedString
+	}
 }
 
-extension Dictionary where Key == NSAttributedString.Key, Value == Any {
+public extension Dictionary where Key == NSAttributedString.Key, Value == Any {
 	static func foregroundColor(_ color: UIColor) -> Self {
 		let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: color]
 		return attributes
@@ -135,7 +213,7 @@ extension Dictionary where Key == NSAttributedString.Key, Value == Any {
 	}
 }
 
-extension NSAttributedString {
+public extension NSAttributedString {
 	func font() -> UIFont {
 		let attributes = attributes(at: 0, effectiveRange: nil)
 		let font = attributes.filter { $0.key == .font }[.font] as? UIFont
@@ -159,7 +237,7 @@ extension NSAttributedString {
 	}
 }
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
 	private func addingAttributes(
 		_ attributes: [NSAttributedString.Key: Any],
 		range: NSRange
