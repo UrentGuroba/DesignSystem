@@ -30,9 +30,6 @@ let package = Package(
 		),
 		.target(
 			name: "ColorsService",
-			dependencies: [
-				"Common"
-			],
 			resources: [.process("Resources")]
 		),
 		.target(
@@ -42,7 +39,8 @@ let package = Package(
 		.target(
 			name: "Common",
 			dependencies: [
-				"FontService"
+				"FontService",
+				"ColorsService"
 			]
 		),
 		.testTarget(

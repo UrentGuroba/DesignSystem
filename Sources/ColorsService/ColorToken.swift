@@ -4,7 +4,6 @@
 //
 //  Created by Senior Developer on 24.08.2023.
 //
-import Common
 import Foundation
 
 public enum ColorToken {

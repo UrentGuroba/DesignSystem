@@ -4,7 +4,6 @@
 //
 //  Created by Senior Developer on 25.08.2023.
 //
-import Common
 import UIKit
 
 public protocol ColorServiceProtocol {
