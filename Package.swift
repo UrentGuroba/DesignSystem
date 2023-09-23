@@ -23,9 +23,9 @@ let package = Package(
 		.target(
 			name: "DesignSystem",
 			dependencies: [
-//				"Common",
-//				"FontService",
-//				"ColorsService"
+				"Common",
+				"FontService",
+				"ColorsService"
 			]
 		),
 		.target(
